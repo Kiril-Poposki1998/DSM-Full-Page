@@ -1,5 +1,5 @@
 (async () => {
-    var response = await fetch('http://localhost:8081');
+    var response = await fetch('http://dsm.local/nav');
     switch (response.status) {
         case 200:
             var template = await response.text();
