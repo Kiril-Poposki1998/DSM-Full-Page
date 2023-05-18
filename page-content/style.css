@@ -1,0 +1,14 @@
+.file_container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
