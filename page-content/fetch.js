@@ -1,5 +1,5 @@
 (async () => {
-    var response = await fetch('http://dsm.local/nav/');
+    var response = await fetch('http://dsm.local/nav/',{cache: "no-store"});
     switch (response.status) {
         case 200:
             var template = await response.text();
@@ -13,7 +13,7 @@
 })();
 
 (async () => {
-    var response = await fetch('http://dsm.local/footer/');
+    var response = await fetch('http://dsm.local/footer/',{cache: "no-store"});
     switch (response.status) {
         case 200:
             var template = await response.text();
@@ -27,7 +27,7 @@
 })();
 
 (async () => {
-    var response = await fetch('http://dsm.local/main/');
+    var response = await fetch('http://dsm.local/main/',{cache: "no-store"});
     switch (response.status) {
         case 200:
             var template = await response.text();
