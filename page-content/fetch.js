@@ -17,11 +17,25 @@
     switch (response.status) {
         case 200:
             var template = await response.text();
-            var div_navbar = document.getElementById("footer");
-            div_navbar.innerHTML = template;
+            var dev_footer = document.getElementById("footer");
+            dev_footer.innerHTML = template;
             break;
         case 404:
             console.log('Footer Not found');
+            break;
+    }
+})();
+
+(async () => {
+    var response = await fetch('http://dsm.local/main/');
+    switch (response.status) {
+        case 200:
+            var template = await response.text();
+            var div_main = document.getElementById("main_page");
+            div_main.innerHTML = template;
+            break;
+        case 404:
+            console.log('Main Page not found');
             break;
     }
 })();
